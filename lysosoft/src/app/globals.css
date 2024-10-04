@@ -25,3 +25,31 @@ body {
     text-wrap: balance;
   }
 }
+.action-btn{
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  &:before,&:after{
+      background: #9D00FF;
+      content: '';
+      position: absolute;
+      z-index: -1;
+  }
+  &:after{
+      height: 100%;
+      left: -35%;
+      top: 0;
+      transform: skew(50deg);
+      transition-duration: 0.6s;
+      transform-origin: top left;
+      width: 0;
+  }
+  &:hover{
+      color: #fff;
+      &:after{
+          height: 100%;
+          width: 135%;
+      }
+}
+  
+}
