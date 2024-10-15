@@ -87,3 +87,30 @@ body {
     }
   }
 }
+
+@keyframes roam {
+  0% {
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+  }
+  33% {
+      left: 100%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+  }
+  66% {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+  }
+  100% {
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+  }
+}
+
+.animate-roam {
+  animation: roam 10s linear infinite; /* Adjust duration for speed */
+}

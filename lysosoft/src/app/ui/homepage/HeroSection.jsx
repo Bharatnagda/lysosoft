@@ -5,6 +5,7 @@ import CommonGradient2 from '@/app/ui/homepage/CommonGradient2'
 import Badge from './Badge'
 import Link from 'next/link'
 import InfiniteScroller from '../common/InfiniteScroller'
+import ClientBox from '@/app/ui/homepage/ClientBox'
 
 const HeroSection = () => {
   return (
@@ -27,7 +28,7 @@ const HeroSection = () => {
           <span className="bg-[hsla(0,0%,100%,.2)] text-white py-2 px-4 rounded-lg w-fit invisible text-xl font-medium translate-y-5 cursor-pointer transition-all delay-300 absolute top-5 right-5 group-hover:visible group-hover:translate-y-0">↗</span>
         </Link>
           <CommonGradient2/>
-          <div className="rotate-[-20deg] translate-y-20">
+          <div className="rotate-[-15deg] translate-y-28">
             <InfiniteScroller/>
           </div>
       </div>
