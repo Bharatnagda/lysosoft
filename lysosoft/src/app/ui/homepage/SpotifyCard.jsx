@@ -7,14 +7,14 @@ import Image from 'next/image'
 
 const SpotifyCard = () => {
   return (
-    <div className='w-[35%] relative group rounded-2xl p-5 flex flex-col gap-2 justify-start min-h-56  bg-[url("/images/commonBlur.png")] overflow-hidden bg-no-repeat bg-cover z-30 pb-0 pr-0 hover:drop-shadow-lg'>
+    <div className='w-full relative group rounded-2xl p-5 flex flex-col gap-2 justify-start min-h-56  bg-[url("/images/commonBlur.png")] overflow-hidden bg-no-repeat bg-cover z-30 pb-0 pr-0 hover:drop-shadow-lg'>
         <Badge title={'Now Playing at Lysosoft'} imgUrl={'spotify.png'}/>
         <CommonGradient2/>
         <div className="flex items-end justify-between">
             <div className="my-5">
                 <Button url={'tel:+91-9782241022'} title={'Are you Ready'}/>
             </div>
-            <div className="relative h-full">
+            <div className="relative h-32 w-32 sm:w-44 sm:h-44 2xl:w-60 2xl:h-60">
                 <div className="relative z-30  rounded-lg translate-x-2 bg-white w-[250px] h-[250px] flex items-center justify-center">
                     <Image src={'/images/queue3.png'} width={220} height={220} alt='queue song' className="animate-spin m-auto"/>
                 </div>

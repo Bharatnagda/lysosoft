@@ -15,10 +15,10 @@ const Services =[
         imgUrl:"service3.png",
         badgeTitle:"Verifone"
     },
-    {
-        imgUrl:"service4.png",
-        badgeTitle:"Jokabbergsgatan 24"
-    },
+    // {
+    //     imgUrl:"service4.png",
+    //     badgeTitle:"Jokabbergsgatan 24"
+    // },
     {
         imgUrl:"service5.png",
         badgeTitle:"Cryptonow"
@@ -41,7 +41,7 @@ const Services =[
 const InfiniteScroller = () => {
   return (
     <div class="infinite-slider">
-                <div class="infinite-slide-track w-[calc(150px*10)] flex gap-5 ">
+                <div class="infinite-slide-track w-[calc(150px*10)] sm:w-[calc(150px*10)] flex gap-5 ">
                     
                     {
                         Services.map((service)=>(

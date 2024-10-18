@@ -46,11 +46,11 @@ const Services =[
     },
     {
         imgUrl:"webflow10.png",
-        badgeTitle:"Performance Analysis"
+        badgeTitle:"Web Vitals"
     },
     {
         imgUrl:"webflow11.png",
-        badgeTitle:"CRM & Automations"
+        badgeTitle:"Automations"
     },
     {
         imgUrl:"webflow12.png",
@@ -60,10 +60,10 @@ const Services =[
         imgUrl:"webflow13.png",
         badgeTitle:"Growth Strategy"
     },
-    {
-        imgUrl:"webflow14.png",
-        badgeTitle:"Landingpages"
-    },
+    // {
+    //     imgUrl:"webflow14.png",
+    //     badgeTitle:"Landingpages"
+    // },
     {
         imgUrl:"webflow15.png",
         badgeTitle:"Email Marketing"
@@ -86,7 +86,7 @@ const Services =[
 const ServiceScroller = () => {
   return (
     <div class="infinite-slider">
-                <div class="infinite-slide-track w-[calc(150px*30)] flex gap-5 ">
+                <div class="infinite-slide-track w-[calc(150px*20)] 2xl:w-[calc(150px*30)] flex gap-5 ">
                     
                     {
                         Services.map((service)=>(
@@ -94,7 +94,7 @@ const ServiceScroller = () => {
                                 <div className="rounded-lg overflow-hidden  ">
                                     <Image src={`/images/`+ service.imgUrl} width={200} height={200} alt={service.badgeTitle} classNamne=""/>
                                 </div>
-                                <div className="absolute -top-16 left-0 right-0 w-fit m-auto invisible group-hover:visible group-hover:-skew-y-3">
+                                <div className="absolute -top-12 2xl:-top-16 left-0 right-0 w-fit m-auto invisible group-hover:visible group-hover:-skew-y-2">
                                     <RedirectBadge badgeTitle={service.badgeTitle}/>
                                 </div>
                             </div>
