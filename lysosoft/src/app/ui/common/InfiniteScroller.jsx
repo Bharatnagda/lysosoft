@@ -45,11 +45,11 @@ const InfiniteScroller = () => {
                     
                     {
                         Services.map((service)=>(
-                            <div class="group relative infinite-slide rounded-lg grid place-items-center cursor-pointer opacity-75 hover:opacity-100">
-                                <div className="rounded-lg overflow-hidden  ">
+                            <div class=" relative infinite-slide rounded-lg grid place-items-center cursor-pointer sm:opacity-75 hover:opacity-100">
+                                <div className="peer rounded-lg overflow-hidden  ">
                                     <Image src={`/images/`+ service.imgUrl} width={250} height={250} alt={service.badgeTitle} classNamne=""/>
                                 </div>
-                                <div className="absolute -top-16 left-0 right-0 w-fit m-auto group-hover:skew-y-3">
+                                <div className="sm:invisible peer-hover:visible absolute -top-12 left-0 right-0 w-fit m-auto peer-hover:skew-y-3 peer-hover:animate-bounce">
                                     <RedirectBadge badgeTitle={service.badgeTitle}/>
                                 </div>
                             </div>

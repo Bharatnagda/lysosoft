@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${quicksand.className} h-screen bg-black`}>
+      <body className={`${quicksand.className} h-screen bg-[#19191a]`}>
         <Header/>
         <div className="">
           {children}
