@@ -1,9 +1,9 @@
-import { Quicksand } from "next/font/google";
+import { Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/ui/layout/Header";
 import Footer from "@/app/ui/layout/Footer";
 
-const quicksand = Quicksand({ subsets: ["latin"],
+const montserrat = Montserrat_Alternates({ subsets: ["latin"],
 weight: ["400", "500", "700"],
  });
 
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${quicksand.className} h-screen bg-[#19191a]`}>
+      <body className={`${montserrat.className} h-screen bg-[#19191a]`}>
         <Header/>
         <div className="">
           {children}

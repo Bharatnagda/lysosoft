@@ -52,7 +52,7 @@ export default function Footer() {
                 </div>
                 <div className="single-card legal flex items-center justify-between gap-4 sm:absolute bottom-0 w-full">
                     <p href="javascript:;" className="legal-page text-white text-[14px] font-medium">Legal</p>
-                    <p href="javascript:;" className="copy-right text-xl sm:text-[34px] text-white font-semibold">&copy; 2020</p>
+                    <p href="javascript:;" className="copy-right text-xl sm:text-[34px] text-white font-semibold">&copy; 2024</p>
                 </div>
 
            </div>

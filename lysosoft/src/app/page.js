@@ -7,6 +7,7 @@ import ServiceBox from "@/app/ui/homepage/ServiceBox";
 import TeamCard from "@/app/ui/homepage/TeamCard";
 import VideoCard from "@/app/ui/homepage/VideoCard";
 import Capabilities from "@/app/ui/homepage/Capabilities";
+import FloatingServices from "./ui/homepage/FloatingServices";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <div className="w-full sm:w-1/3 flex flex-col gap-4">
           <SpotifyCard/>
           <TeamCard/>
-          <MottoCard title={'"A good metric changes the way you behave"'} author={'- Alistair Croll, Lean Analytic'}/>
+          <FloatingServices/>
         </div>
         <div className="w-full sm:w-2/3">
           <ServiceBox/>
